@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- container for holding the weather card -->
+    <div class="container">
+        <h1> Swapna Weather Web App</h1>
+
+
+        <!-- section for searching the weather of a city -->
+        <form onsubmit="getData(event)" class="searchData">
+            <input type="text" id="inputBox" placeholder="enter the city name">
+            <button>Search</button>
+        </form>
+
+        <!-- section for displaying the city weather data -->
+        <section class="cityWeatherData">
+
+            <!-- displaying the coutry details -->
+            <div class="countryDetails details">
+
+                <!-- displaying the country name -->
+                <div class="card">
+                    <p>Country name</p>
+                    <p id="countryName">__</p>
+                </div>
+
+                <!-- displayig the state name -->
+                <div class="card">
+                    <p>State name</p>
+                    <p id="StateName">__</p>
+                </div>
+
+                <!-- displayig city name -->
+                <div class="card">
+                    <p>City name</p>
+                    <p id="cityName">__</p>
+                </div>
+            </div>
+
+            <!-- displaying the weather status -->
+            <div class="weatherDetails details">
+                <!-- displaying the humidity -->
+                <div class="card">
+                    <p>Humidity</p>
+                    <p><span id="humidity">__</span>KMPH</p>
+                </div>
+
+                <!-- displaying the wind speed -->
+                <div class="card">
+                    <p>Wind Speed</p>
+                    <p><span id="windSpeed">__</span>KMPH</p>
+                </div>
+
+                 <!-- displaying the current temperature in celcius -->
+                 <div class="card">
+                    <p>temperature</p>
+                    <!-- unicode for degree celcius symbol -->
+                    <p><span id="temperature">__</span>&#8451;</p>
+                </div>
+
+                <!-- displaying the weather condition -->
+                <div class="card">
+                    <img width="70px" src="" alt="icon" id="logoImage">
+                    <p class="weatherStatus">_</p>
+                    <p id="weatherStatus">_</p>
+                </div>
+            </div>
+
+        </section>
+    
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
